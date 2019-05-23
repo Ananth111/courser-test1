@@ -1,6 +1,10 @@
-(function(){
+(function () {
   'use strict';
-  angular.module('myFirstApp',[])
-  .controller('myFirstController',function(){
-  });
+
+angular.module('myFirstApp', [])
+
+.controller('myFirstController', function () {
+
+});
+
 })();
