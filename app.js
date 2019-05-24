@@ -15,10 +15,13 @@ angular.module('NameCalculator', [])
 
 function calculatNumericForString(string) {
   var totalStringvalue = 0;
-  for(var i=0;i<string.length;i++) {
-    totalStringvalue += string.charAt(i);
+  for (var i=0;i<string.length;i++) {
+    totalStringvalue += string.charCodeAt(i);
   }
+
   return totalStringvalue;
 }
-})
-})();
+
+});
+
+}) ();
