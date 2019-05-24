@@ -8,17 +8,17 @@ angular.module('NameCalculator', [])
  $scope.totalvalue=0;
 
  $scope.displayNumeric=function () {
-   var totalNamevalue = CalculatNumericForString($scope.name);
+   var totalNamevalue = calculatNumericForString($scope.name);
      $scope.totalvalue = totalNamevalue;
    };
-});
-function CalculatNumericForString(string) {
+
+
+function calculatNumericForString(string) {
   var totalStringvalue = 0;
   for(var i=0;i<string.length;i++) {
-    totalStringvalue + = string.charAt(i);
+    totalStringvalue += string.charAt(i);
   }
   return totalStringvalue;
 }
-
-
+}
 })();
