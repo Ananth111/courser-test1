@@ -20,5 +20,5 @@ function calculatNumericForString(string) {
   }
   return totalStringvalue;
 }
-}
+})
 })();
