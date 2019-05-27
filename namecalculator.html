@@ -5,10 +5,10 @@
   <script src="angular.min.js"></script>
   <script src="app.js"></script>
   <style>body {font-size:1.3em;}</style>
-  <title>Name Calculator</title>
+  <title>NameCalculator</title>
   </head>
   <body ng-app="NameCalculator">
-    <h1 align=center>Name Calculator</h1>
+    <h1 align=center>NameCalculator</h1>
     <div ng-controller="NameCalculatorController">
       <div>
         your name:
@@ -17,7 +17,7 @@
       ng-keyup="displayNumeric();">
       </div>
       <div>Total Numeric value of person's name is:
-      </div>
+      {{totalValue}}</div>
      </div>
     </body>
     </html>
