@@ -5,22 +5,22 @@ angular.module('NameCalculator', [])
 
 .controller('NameCalculatorController', function ($scope) {
  $scope.name= "";
- $scope.totalvalue= 0;
+ $scope.totalValue = 0;
 
  $scope.displayNumeric = function () {
-   var totalNamevalue =
+   var totalNameValue =
    calculatNumericForString($scope.name);
-     $scope.totalvalue = totalNamevalue;
+     $scope.totalValue = totalNameValue;
    };
 
 
 function calculatNumericForString(string) {
-  var totalStringvalue = 0;
+  var totalStringValue = 0;
   for (var i=0; i < string.length; i++) {
-    totalStringvalue += string.charCodeAt(i);
+    totalStringValue += string.charCodeAt(i);
   }
 
-  return totalStringvalue;
+  return totalStringValue;
 }
 
 });
