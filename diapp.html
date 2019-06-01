@@ -1,14 +1,15 @@
 <<!DOCTYPE html>
-<html>
+<html ng-app = "DIApp">
 <head>
   <script src = "angular.min.js"></script>
   <script src = "app1.js"></script>
   <title>DIApp</title>
   </head>
-  <body ng-app = "DIApp">
-    <marquee><font color = red>DIAPP</font></marquee>
-  <div ng-controller = DIController>
-    <input type = "text" ng-model = "name">
+  <body>
+    <font color = "red">DIApp</font>
+  <div ng-controller = 'DIController'>
+    <input type = "text"
+    ng-model = "name">
     </div>
-    </body>
-    </html>
+  </body>
+</html>
