@@ -8,10 +8,10 @@ function DIController($scope, $filter) {
   $scope.name = "Ananth";
 
   $scope.upper = function () {
-  var upCase = $filter('uppercase');
-  $scope.name = upCase($scope.name);
-  }
+   var upCase = $filter('uppercase');
+   $scope.name = upCase($scope.name);
+  };
 }
 
 
-})
+})();
